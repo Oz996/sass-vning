@@ -1,0 +1,101 @@
+$big-classroom-color: darkblue;
+$classroom-color: yellow;
+$small-classroom-color: pink;
+
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background :rgb(255, 255, 255)
+}
+
+@mixin classroom-layout ($background) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: $background;
+    
+}
+@mixin desk-size ($margin) {
+    width: 50px;
+    height: 50px;
+    margin: $margin;
+    border: 2px solid black;
+}
+@mixin teacher-desk($background, $left) {
+    width: 100px;
+    height: 40px;
+    left: $left;
+    background: $background;
+    border: 2px solid black;
+    position: relative
+}
+
+div.smallClassroom {
+   @include classroom-layout(peachpuff);
+    width: 220px;
+    height: 180px;
+    
+    .smallDesk {
+    background:  $small-classroom-color;
+    @include desk-size(27px);
+
+    
+}
+
+.smallDeskTeacher {
+        @include teacher-desk(orange,55px)
+    }
+}
+.classroom {
+    @include classroom-layout(lightgrey);
+    width: 290px;
+    height: 200px;
+    position: relative;
+    right: 200px;
+    top: 50px;
+
+}
+.desk {
+    background-color: $classroom-color;
+    @include desk-size(9px)
+}
+.deskTeacher {
+    @include teacher-desk(red, 90px );
+    top: 20px;
+}
+.classroom2 {
+    @include classroom-layout(lightgrey);
+    width: 290px;
+    height: 200px;
+    position: relative;
+    left: 200px;
+    bottom: 150px;
+}
+.largeClassroom {
+    @include classroom-layout(grey);
+    width: 350px;
+    height: 280px;
+    position: relative;
+    right: 230px;
+    bottom: 100px;
+}
+.largeDesk {
+    background: $big-classroom-color;
+    @include desk-size(15px)
+}
+.largeClassroom2 {
+    @include classroom-layout(grey);
+    width: 350px;
+    height: 280px;
+    position: relative;
+    left: 230px;
+    bottom: 380px;
+
+}
+.largeDeskTeacher {
+    @include teacher-desk(green,110px )
+}

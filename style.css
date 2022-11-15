@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+
+div.smallClassroom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: peachpuff;
+  width: 220px;
+  height: 180px;
+}
+div.smallClassroom .smallDesk {
+  background: pink;
+  width: 50px;
+  height: 50px;
+  margin: 27px;
+  border: 2px solid black;
+}
+div.smallClassroom .smallDeskTeacher {
+  width: 100px;
+  height: 40px;
+  left: 55px;
+  background: orange;
+  border: 2px solid black;
+  position: relative;
+}
+
+.classroom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: lightgrey;
+  width: 290px;
+  height: 200px;
+  position: relative;
+  right: 200px;
+  top: 50px;
+}
+
+.desk {
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  margin: 9px;
+  border: 2px solid black;
+}
+
+.deskTeacher {
+  width: 100px;
+  height: 40px;
+  left: 90px;
+  background: red;
+  border: 2px solid black;
+  position: relative;
+  top: 20px;
+}
+
+.classroom2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: lightgrey;
+  width: 290px;
+  height: 200px;
+  position: relative;
+  left: 200px;
+  bottom: 150px;
+}
+
+.largeClassroom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: grey;
+  width: 350px;
+  height: 280px;
+  position: relative;
+  right: 230px;
+  bottom: 100px;
+}
+
+.largeDesk {
+  background: darkblue;
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  border: 2px solid black;
+}
+
+.largeClassroom2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: grey;
+  width: 350px;
+  height: 280px;
+  position: relative;
+  left: 230px;
+  bottom: 380px;
+}
+
+.largeDeskTeacher {
+  width: 100px;
+  height: 40px;
+  left: 110px;
+  background: green;
+  border: 2px solid black;
+  position: relative;
+}/*# sourceMappingURL=style.css.map */
