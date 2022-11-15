@@ -1,7 +1,11 @@
+* {
+  margin: 15px;
+}
+
 body {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   background: rgb(255, 255, 255);
@@ -38,9 +42,6 @@ div.smallClassroom .smallDeskTeacher {
   background: lightgrey;
   width: 290px;
   height: 200px;
-  position: relative;
-  right: 200px;
-  top: 50px;
 }
 
 .desk {
@@ -61,18 +62,6 @@ div.smallClassroom .smallDeskTeacher {
   top: 20px;
 }
 
-.classroom2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background: lightgrey;
-  width: 290px;
-  height: 200px;
-  position: relative;
-  left: 200px;
-  bottom: 150px;
-}
-
 .largeClassroom {
   display: flex;
   flex-direction: row;
@@ -80,9 +69,6 @@ div.smallClassroom .smallDeskTeacher {
   background: grey;
   width: 350px;
   height: 280px;
-  position: relative;
-  right: 230px;
-  bottom: 100px;
 }
 
 .largeDesk {
@@ -91,18 +77,6 @@ div.smallClassroom .smallDeskTeacher {
   height: 50px;
   margin: 15px;
   border: 2px solid black;
-}
-
-.largeClassroom2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background: grey;
-  width: 350px;
-  height: 280px;
-  position: relative;
-  left: 230px;
-  bottom: 380px;
 }
 
 .largeDeskTeacher {
